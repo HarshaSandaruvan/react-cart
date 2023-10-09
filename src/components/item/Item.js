@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Item.module.css'
 
-export default function Item({item, cartItem, name, price, img}, {setCartItem}) {
+export default function Item({item, cartItem, name, price, img}, ) {
    
 
    
@@ -13,8 +13,7 @@ export default function Item({item, cartItem, name, price, img}, {setCartItem}) 
                 <div className={style.innerContainer}>
                     <span>Rs. {price}</span>
                     <button className={style.btn} onClick={()=>{
-                        setCartItem(item)
-                        alert(cartItem);
+                        alert(`${name} is added`)
                     }}>Add to cart</button>
 
                 </div>
